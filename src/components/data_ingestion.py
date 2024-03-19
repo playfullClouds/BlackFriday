@@ -7,6 +7,7 @@ import pandas as pd  # Import the pandas library for data manipulation and analy
 from sklearn.model_selection import train_test_split  # Import train_test_split function for splitting data arrays into two subsets
 from dataclasses import dataclass  # Import dataclass decorator for creating data classes
 
+from src.components.data_transformation import DataTransformation, DataTransformationConfig
 
 # Decorator to automatically generate special methods for the class below
 @dataclass
@@ -63,4 +64,7 @@ class DataIngestion:  # Define the DataIngestion class
 # Check if the script is run as the main program       
 if __name__ == "__main__":
     obj = DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data, test_data, val_data = obj.initiate_data_ingestion()
+    
+    data_transformation = DataTransformation()
+    data_transformation.initiate_data_transformation(train_data, test_data, val_data)
