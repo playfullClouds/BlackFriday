@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split  # Import train_test_split 
 from dataclasses import dataclass  # Import dataclass decorator for creating data classes
 
 from src.components.data_transformation import DataTransformation, DataTransformationConfig
+from src.components.model_trainer import ModelTrainerConfig, ModelTrainer
 
 # Decorator to automatically generate special methods for the class below
 @dataclass
@@ -24,7 +25,7 @@ class DataIngestion:  # Define the DataIngestion class
     def initiate_data_ingestion(self):  # Method to start the data ingestion process
         logging.info("Entered the data ingestion method or component")  # Log entry
         try:  # Try block to catch exceptions
-            df = pd.read_csv(r'C:\mlprojects\BlackFriday\data\cleaned_black_friday_data.csv')  # Read the dataset into a pandas DataFrame
+            df = pd.read_csv(r'C:\BlackFriday\data\cleaned_black_friday_data.csv')  # Read the dataset into a pandas DataFrame
             logging.info('Read the dataset as dataframe')  # Log entry
             
             # Create directories if they don't exist
@@ -67,4 +68,7 @@ if __name__ == "__main__":
     train_data, test_data, val_data = obj.initiate_data_ingestion()
     
     data_transformation = DataTransformation()
-    data_transformation.initiate_data_transformation(train_data, test_data, val_data)
+    train_arr, test_arr, val_arr, preprocessor_obj_file_path = data_transformation.initiate_data_transformation(train_data, test_data, val_data)
+
+    modeltrainer = ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_arr, val_arr))

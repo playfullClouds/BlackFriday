@@ -1,0 +1,11 @@
+prefix=c:/BlackFriday/ack/Library
+exec_prefix=${prefix}
+libdir=c:/BlackFriday/ack/Library/lib
+includedir=c:/BlackFriday/ack/Library/include
+
+Name: abseil_dll
+Description: Abseil DLL library
+URL: https://abseil.io/
+Version: 20240116
+Libs: -L${libdir} -labseil_dll 
+Cflags: -I${includedir}
