@@ -1,0 +1,152 @@
+/* Set default font, remove margin and padding for the entire document */
+body {
+    /* font-family: 'Arial', sans-serif; Default font set to Arial */
+    font-family: 'Merriweather', serif;
+    font-size: 16px; /* Default text */
+
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: #323232; /* Off Black for the whole page background */
+    color: #333; /* Dark gray text color */
+    line-height: 1.6; /* Spacing between lines */
+}
+
+/* Style for container class elements */
+.container {
+    background: #323232; /* Off Black for the container background */
+    max-width: 1170px; /* Maximum width of container */
+    margin: auto; /* Center the container */
+    padding: 15px; /* Padding inside the container */
+    margin: auto; /* Center the container */
+    border-radius: 8px; /* Optional: Rounded corners for the container */
+}
+
+
+/* Style for h2 elements */
+h2 {
+    color: #333; /* Dark gray text color for headings */
+}
+
+/* Style for h1 */
+h1 {
+    color: #ffffff; /* Ensuring text is white for contrast */
+}
+
+
+/* Style for form elements */
+form {
+    background: #fff1f2; /* Light pink cream color */
+    padding: 15px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Sets the maximum width of the form */
+    margin: auto; /* Centers the form horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
+}
+
+
+/* Style for elements with form-control class */
+.form-control {
+    margin-bottom: 10px; /* Space below the form control */
+    padding: 8px; /* Padding inside the form control */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    width: 100%; /* Full width of the parent */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
+}
+
+/* Style for buttons with btn-primary class */
+.btn-primary {
+    padding: 8px 20px; /* Vertical and horizontal padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #5cb85c; /* Green background color */
+    color: white; /* White text color */
+    cursor: pointer; /* Mouse cursor becomes a hand icon */
+    font-size: 16px; /* Text size */
+    width: 100%; /* Full width of the parent */
+    box-sizing: border-box; /* Border and padding included in the width */
+}
+
+/* Hover style for btn-primary class to change background color */
+.btn-primary:hover {
+    background-color: #4cae4c; /* Darker green background on hover */
+}
+
+/* Style for labels of form elements */
+.form-label {
+    display: block; /* Each label on a new line */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+/* Style for the legend class */
+.legend {
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Space below the legend */
+    color: #555; /* Medium gray text color */
+}
+
+/* Additional button styles for secondary action */
+.btn-secondary {
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #6c757d; /* Gray background color */
+    color: white; /* White text color */
+    cursor: pointer; /* Cursor as pointer */
+    font-size: 16px; /* Font size */
+    margin-top: 20px; /* Top margin */
+    text-decoration: none; /* No text decoration */
+    display: inline-block; /* Display inline with block features */
+}
+
+/* Hover style for btn-secondary class to change background color */
+.btn-secondary:hover {
+    background-color: #5a6268; /* Darker gray background on hover */
+}
+
+
+/* Container for the back button and prediction result */
+.results-container {
+    display: flex;
+    justify-content: space-between; /* Aligns children to opposite ends */
+    align-items: center; /* Centers children vertically */
+    flex-wrap: wrap; /* Allows items to wrap if not enough space */
+}
+
+.back-button {
+    /* Ensures the button doesn't stretch and aligns to the left */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+
+/* Style specifically for the prediction result */
+.prediction-result {
+    color: #333; /* Dark color for better contrast on light background */
+    text-shadow: 1px 1px 0px #fff; /* Optional: Adds a subtle white shadow for readability */
+    background-color: #fff1f2; /* Light pink cream color, if needed */
+    padding: 10px; /* Adds some padding around the text */
+    border-radius: 4px; /* Rounds the corners */
+    display: inline-block; /* Only as wide as it needs to be */
+    margin-top: 20px; /* Adds space above the element */
+    margin-left: auto; /* Pushes the prediction result to the right */
+    text-align: right; /* Aligns the text to the right */
+}
+
+
+/* Style for all select elements - to set the overall appearance of the dropdown */
+select {
+    color: black; /* Sets the text color of the dropdown to black */
+    background-color: white; /* Sets the background color of the dropdown to white */
+    border: 1px solid #ccc; /* Sets the border color */
+    padding: 5px; /* Adds some padding inside the select */
+    border-radius: 4px; /* Adds rounded corners */
+}
+
+/* Attempting to style option elements directly for the options */
+select option {
+    color: white; /* Intended text color for options to be white */
+    background-color: black; /* Intended background color for options to be black */
+}

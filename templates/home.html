@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Black Friday Spending Predictor</title>
+    <meta name="description" content="Predict Black Friday Customer Spending">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Black Friday Customer Spending</h1>
+
+        <form action="{{ url_for('predict_data')}}" method="post">
+            <h2 class="legend">Black Friday Customer Spending Prediction</h2>
+            
+            <!-- Gender Field -->
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-control" name="Gender" required>
+                    <option selected disabled value="">Select your Gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+            
+            <!-- Age Field -->
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <select class="form-control" name="Age" required>
+                    <option selected disabled value="">Select your Age</option>
+                    <option value="0-17">0-17</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46-50">46-50</option>
+                    <option value="51-55">51-55</option>
+                    <option value="55+">55+</option>
+                </select>
+            </div>
+
+            <!-- Occupation Field -->
+            <div class="mb-3">
+                <label class="form-label">Occupation</label>
+                <input class="form-control" type="number" name="Occupation"
+                        placeholder="Enter your occupation in #" min='0' max='20' required />
+            </div>
+
+            <!-- City Category Field -->
+            <div class="mb-3">
+                <label class="form-label">City Category</label>
+                <select class="form-control" name="City_Category" required>
+                    <option selected disabled value="">Select your City Category</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+
+            <!-- Stay In Current City Years Field -->
+            <div class="mb-3">
+                <label class="form-label">Stay In Current City Years</label>
+                <input class="form-control" type="number" name="Stay_In_Current_City_Years"
+                        placeholder="Enter the length of stay in current city" min='0' max='4' required />
+            </div>
+
+            <!-- Marital Status Field -->
+            <div class="mb-3">
+                <label class="form-label">Marital Status</label>
+                <select class="form-control" name="Marital_Status" required>
+                    <option selected disabled value="">Select your marital status</option>
+                    <option value="0">Single</option>
+                    <option value="1">Married</option>
+                </select>
+            </div>
+
+            <!-- Product Category 1 Field -->
+            <div class="mb-3">
+                <label class="form-label">Product Category 1</label>
+                <input class="form-control" type="number" name="Product_Category_1"
+                        placeholder="Enter Product Category 1" min='1' max='20' required />
+            </div>
+
+            <!-- Product Category 2 Field -->
+            <div class="mb-3">
+                <label class="form-label" for="Product_Category_2">Product Category 2</label>
+                <select class="form-control" id="Product_Category_2" name="Product_Category_2">
+                    <option value="">Select a Category</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                </select>
+            </div>
+
+            <!-- Product Category 3 Field -->
+            <div class="mb-3">
+                <label class="form-label" for="Product_Category_3">Product Category 3</label>
+                <select class="form-control" id="Product_Category_3" name="Product_Category_3">
+                    <option value="">Select a Category</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict the Spending" />
+            </div>
+
+            <div class="results-container">
+                <!-- Back Button -->
+                <div class="back-button">
+                    <a href="/" class="btn btn-secondary">Back to Home</a>
+                </div>
+            
+                <!-- Prediction Result -->
+                {% if results %}
+                    <h2 class="prediction-result">
+                        The prediction is: ${{ results }}
+                    </h2>
+                {% endif %}
+            </div>
+        
+        </form>
+    
+    </div>
+
+</body>
+</html>
