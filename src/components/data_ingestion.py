@@ -25,7 +25,7 @@ class DataIngestion:  # Define the DataIngestion class
     def initiate_data_ingestion(self):  # Method to start the data ingestion process
         logging.info("Entered the data ingestion method or component")  # Log entry
         try:  # Try block to catch exceptions
-            df = pd.read_csv(r'C:\BlackFriday\data\cleaned_black_friday_data.csv')  # Read the dataset into a pandas DataFrame
+            df = pd.read_csv(os.path.join('data', 'cleaned_black_friday_data.csv'))# Read the dataset into a pandas DataFrame
             logging.info('Read the dataset as dataframe')  # Log entry
             
             # Create directories if they don't exist
