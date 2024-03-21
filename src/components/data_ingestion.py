@@ -1,7 +1,7 @@
 import os  # Import the OS module for interacting with the operating system
 import sys  # Import the sys module 
-from ..exception import CustomException  # Import CustomException from the exception module stored in the src dir.
-from ..logger import logging  # Import the logging object from the logger module for logging
+from src.exception import CustomException  # Import CustomException from the exception module stored in the src dir.
+from src.logger import logging  # Import the logging object from the logger module for logging
 import pandas as pd  # Import the pandas library for data manipulation and analysis
 
 from sklearn.model_selection import train_test_split  # Import train_test_split function for splitting data arrays into two subsets
