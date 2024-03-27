@@ -1,3 +1,4 @@
+import os
 import sys
 import pandas as pd
 
@@ -6,14 +7,16 @@ from src.utils import load_object
 
 class PredictPipeline:
     def __init__(self):
-        pass
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        self.model_path = os.path.join(BASE_DIR, 'artifacts', 'model.pkl')
+        self.preprocessor_path = os.path.join(BASE_DIR, 'artifacts', 'preprocessor.pkl')
     
     def predict(self, features):
         try:
-            model_path = r'C:\BlackFriday\artifacts\model.pkl'
-            preprocessor_path = r"C:\BlackFriday\artifacts\preprocessor.pkl"
-            model = load_object(file_path=model_path)
-            preprocessor = load_object(file_path=preprocessor_path)
+            # model_path = r'C:\BlackFriday\artifacts\model.pkl'
+            # preprocessor_path = r"C:\BlackFriday\artifacts\preprocessor.pkl"
+            model = load_object(file_path=self.model_path)
+            preprocessor = load_object(file_path=self.preprocessor_path)
             data_scaled = preprocessor.transform(features)
             preds = model.predict(data_scaled)
         
