@@ -150,3 +150,40 @@ select option {
     color: white; /* Intended text color for options to be white */
     background-color: black; /* Intended background color for options to be black */
 }
+
+/* Ensuring background and text colors are consistent with the rest of the app */
+.containerr {
+    background: #fff; /* Adjusting container background for contrast */
+    color: #323232; /* Adjusting text color for readability */
+}
+
+/* Styling for the prediction value for emphasis */
+.predicted-value {
+    font-weight: bold;
+    color: #4CAF50; /* Bright green for highlighting the value */
+}
+
+/* Adjusting prediction error styling for visibility */
+.prediction-error {
+    color: #dc3545; /* Using a reddish color for error messages */
+}
+
+/* Enhancements for a more cohesive layout in results-container */
+.results-container {
+    display: block; /* Adjust if you prefer a different layout */
+    text-align: center; /* Center-aligning content for better focus */
+}
+
+/* Adjustment to ensure the back button visually integrates well */
+.btn-secondary {
+    display: inline-block; /* Ensuring it doesn't stretch across */
+    margin-top: 20px; /* Providing space above the button */
+}
+
+.prediction-result {
+    background-color: #f8f9fa; /* Light background for the result area */
+    padding: 20px; /* More padding for emphasis */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the result box */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <div class="containerr">
+        <h1>Prediction Result</h1>
+        <div class="results-container">
+            {% if results %}
+                <div class="prediction-result">
+                    <p>The predicted spending is: <span class="predicted-value">${{ results }}</span></p>
+                </div>
+            {% else %}
+                <div class="prediction-result">
+                    <p class="prediction-error">No prediction result available.</p>
+                </div>
+            {% endif %}
+            <div class="back-button">
+                <a href="/predict" class="btn-secondary">Try another prediction</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
