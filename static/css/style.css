@@ -24,7 +24,7 @@ body {
 
 /* Style for h2 elements */
 h2 {
-    color: #333; /* Dark gray text color for headings */
+    color:#333; /* Dark gray text color for headings */
 }
 
 /* Style for h1 */
@@ -35,7 +35,7 @@ h1 {
 
 /* Style for form elements */
 form {
-    background: #fff1f2; /* Light pink cream color */
+    background: #483D8B; /*Light pink cream color#fff1f2*/
     padding: 15px; /* Padding inside the form */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -79,13 +79,14 @@ form {
 .form-label {
     display: block; /* Each label on a new line */
     margin-bottom: 5px; /* Space below the label */
+    color: #ffffff; 
 }
 
 /* Style for the legend class */
 .legend {
     text-align: center; /* Center-align text */
     margin-bottom: 20px; /* Space below the legend */
-    color: #555; /* Medium gray text color */
+    color: #ffffff; /*#555; /* Medium gray text color */
 }
 
 /* Additional button styles for secondary action */
