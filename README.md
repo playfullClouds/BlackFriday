@@ -4,7 +4,7 @@ This project delivers insightful predictions on customer spending patterns for c
 
 ## Architecture
 
-![Architecture Image](assets)
+![Architecture Image](/assets/arc.png)
 
 
 
