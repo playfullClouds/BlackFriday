@@ -4,7 +4,7 @@ This project delivers insightful predictions on customer spending patterns for c
 
 ## Architecture
 
-![Architecture Image]([arc.png](https://github.com/playfullClouds/mlprojects/blob/main/arc.png)
+![Architecture Image](https://imgur.com/a/qlggIdN)
 
 
 
