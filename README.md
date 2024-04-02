@@ -4,7 +4,7 @@ This project delivers insightful predictions on customer spending patterns for c
 
 ## Architecture
 
-![Architecture Image](https://imgur.com/a/qlggIdN)<blockquote class="imgur-embed-pub" lang="en" data-id="a/qlggIdN" data-context="false" ><a href="//imgur.com/a/qlggIdN"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![Architecture Image](https://imgur.com/a/qlggIdN)
 
 
 
