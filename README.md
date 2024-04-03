@@ -29,10 +29,8 @@ open vs code
 code .
 ```
 
-3. Create a conda env in the project dir after opening the repo
-
+#### 2. Create a conda env in the project dir after opening the repo
 Open in the terminal in vs code
-
 ```bash
 conda create -p YourEnvName python=3.11 -y
 ```
@@ -40,14 +38,17 @@ conda create -p YourEnvName python=3.11 -y
 conda activate YourEnvName\
 ```
 
-4. Clone the repository
-
+#### 3. Clone the repository
 Open in the terminal in vs code
 
 ```bash
 git clone https://github.com/playfullClouds/BlackFriday.git
 ```
 
+#### 4. Install the requirements
+```bash
+pip install -r requirements.txt
+```
 
 
 
