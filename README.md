@@ -11,6 +11,13 @@ This project delivers insightful predictions on customer spending patterns for c
 - AWS CodePipeline: It automates the deployment pipeline, handling the process from code changes in GitHub to building, testing, and deploying those changes.(https://aws.amazon.com/codepipeline/)
 - AWS Elastic Beanstalk: Provides a managed environment for deploying and running your application. It abstracts away the infrastructure layer, allowing you to focus on writing and deploying code without worrying about the underlying hardware and software stack, scaling, or application health monitoring.
 
+## Environment Setup
+
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+conda create -n summary python=3.8 -y
+```
 
 
 
