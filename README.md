@@ -15,17 +15,42 @@ This project delivers insightful predictions on customer spending patterns for c
 
 ### STEPS:
 
-1. Clone the repository
+1. Create your project dir and move inside your dir
 
 ```bash
-https://github.com/playfullClouds/BlackFriday.git
+mkdir YourProjectDir
+```
+and move inside your dir
+```bash
+cd YourProjectDir
 ```
 
-#### STEP 01- Create a conda environment in the project dir after opening the repository
+2. open vs code
 
 ```bash
-conda create -p summary python=3.11 -y
+code .
 ```
+
+3. Create a conda env in the project dir after opening the repo
+
+Open in the terminal in vs code
+
+```bash
+conda create -p YourEnvName python=3.11 -y
+```
+```bash
+conda activate YourEnvName\
+```
+
+4. Clone the repository
+
+Open in the terminal in vs code
+
+```bash
+git clone https://github.com/playfullClouds/BlackFriday.git
+```
+
+
 
 
 
