@@ -15,7 +15,7 @@ This project delivers insightful predictions on customer spending patterns for c
 
 ### STEPS:
 
-1. Create your project dir and move inside your dir
+#### 1. Create your project dir and move inside your dir
 
 ```bash
 mkdir YourProjectDir
@@ -24,9 +24,7 @@ and move inside your dir
 ```bash
 cd YourProjectDir
 ```
-
-2. open vs code
-
+open vs code
 ```bash
 code .
 ```
