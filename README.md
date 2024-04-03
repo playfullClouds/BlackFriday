@@ -8,7 +8,7 @@ This project delivers insightful predictions on customer spending patterns for c
 
 - VS CODE: My prefered IDE
 - GitHub: Serves as the central repository for your project's code, enabling version control, collaboration, and code review. It's the starting point of your CI/CD pipeline, where code changes trigger the continuous integration process.
-- AWS CodePipeline: It automates the deployment pipeline, handling the process from code changes in GitHub to building, testing, and deploying those changes.[Click here](https://aws.amazon.com/codepipeline/)
+- AWS CodePipeline: It automates the deployment pipeline, handling the process from code changes in GitHub to building, testing, and deploying those changes.[AWS CodePipeline](https://aws.amazon.com/codepipeline/)
 - AWS Elastic Beanstalk: Provides a managed environment for deploying and running your application. It abstracts away the infrastructure layer, allowing you to focus on writing and deploying code without worrying about the underlying hardware and software stack, scaling, or application health monitoring.
 
 ## Environment Setup
