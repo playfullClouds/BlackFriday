@@ -62,7 +62,26 @@ python application.py
 
 #### 2. Search for Elastic Beanstalk
 
-      ##### 1. Create new application.
+      1. Create new application.
+            - Enter Application name.
+            - Enter your application description if you want to.
+
+      2. Create a new env.
+            - In the Env tier section, check on the Web Server env.
+            - scroll down to the Platform type section, check on python
+            - Click Next.
+            - In the Service access section, Click on create and use new service role in service role.
+            - Add a EC2 key pair if you have it and want to it.
+            - Enter your Ec2 instance profile
+                  * Search for iam 
+                  * Click on Roles, and click on create role
+                  * In the Trusted entity type, check on Aws service
+                  * In the Use case Service or use case section, look for EC2 and click Next.
+                  * Look for this policies, "AWSElasticBeanstalkReadOnly", "AWSElasticBeanstalkWebTier",
+                    "AWSElasticBeanstalkWorkerTier". In the search box, enter the services one at a time.                           Click on the small square box and then click the X on the search box and search for                            another another one. 
+                  * Click Next.
+                  * In the Role name, add a name for this role. Now, click on create role.
+            - 
       
 
 
