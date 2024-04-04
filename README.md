@@ -34,6 +34,7 @@ Open in the terminal in vs code
 ```bash
 conda create -p YourEnvName python=3.11 -y
 ```
+Activate the env
 ```bash
 conda activate YourEnvName\
 ```
@@ -50,6 +51,16 @@ git clone https://github.com/playfullClouds/BlackFriday.git
 pip install -r requirements.txt
 ```
 
+#### 5. Run the app
+```bash
+python application.py
+```
+
+## AWS CI Deployment
+
+#### 1. Login to AWS console
+
+####
 
 
 
