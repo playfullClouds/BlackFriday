@@ -78,10 +78,11 @@ python application.py
                   * In the Trusted entity type, check on Aws service
                   * In the Use case Service or use case section, look for EC2 and click Next.
                   * Look for this policies, "AWSElasticBeanstalkReadOnly", "AWSElasticBeanstalkWebTier",
-                    "AWSElasticBeanstalkWorkerTier". In the search box, enter the services one at a time.                           Click on the small square box and then click the X on the search box and search for                            another another one. 
+                    "AWSElasticBeanstalkWorkerTier". 
+                  * In the search box, enter the services one at a time. Click on the small square box and then click the X on the search box and search for                            another another one. 
                   * Click Next.
                   * In the Role name, add a name for this role. Now, click on create role.
-            - Now, click on the refresh icon and you would see your newly create ec2 role for elastic                         beanstalk.
+            - Now, click on the refresh icon and you would see your newly create ec2 role for elastic beanstalk.
             - Check on skip to review button. Next, scroll down and click create.
 
 #### 3. Search for CodePipeline
