@@ -60,8 +60,10 @@ python application.py
 
 #### 1. Login to AWS console
 
-####
+#### 2. Search for Elastic Beanstalk
 
+      ##### 1. Create new application.
+      
 
 
 
